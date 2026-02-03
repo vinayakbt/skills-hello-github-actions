@@ -14,6 +14,6 @@ jobs:
     steps:
       - run: gh pr comment "$PR_URL" --body "Welcome to the repository!"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # required by checker
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # required by checker example
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}      # required by gh CLI
           PR_URL: ${{ github.event.pull_request.html_url }}
